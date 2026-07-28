@@ -1,6 +1,6 @@
 # Women Safety Aware Navigation System
 
-![Women Safety Banner](images/women-safety-banner.jpg)
+![Women Safety Banner](images/women-safety-banner.jpeg)
 
 ## Project Overview
 

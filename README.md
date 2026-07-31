@@ -59,3 +59,33 @@ The Women Safety Aware Navigation System is a smart web application that helps w
 - AI-based safe route prediction
 - Emergency contact notification system
 - Live weather API integration
+
+## Project Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Registration Page
+
+![Registration](screenshots/register.png)
+
+### Login Page
+
+![Login](screenshots/login.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Map
+
+![Map](screenshots/map.png)
+
+### SOS Feature
+
+![SOS](screenshots/sos.png)
+
+### Safety Checklist
+
+![Checklist](screenshots/checklist.png)

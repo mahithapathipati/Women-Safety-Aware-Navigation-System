@@ -94,6 +94,10 @@ function showUser() {
         else{
             greeting = "🌙 Good Night";
         }
+        
+        if (!document.getElementById("welcomeUser")) {
+            return;
+        }
 
         document.getElementById("welcomeUser").innerHTML =
         greeting + ", " + username;
@@ -287,7 +291,6 @@ function cancelSOS(){
     "none";
 
 }
-setInterval(updateDateTime, 1000);
 function getWeather(){
 
     let weather = document.getElementById("weatherInfo");
@@ -559,7 +562,10 @@ function updateChecklist(){
 
     }
 }
-updateChecklist();
+if (document.getElementById("currentDateTime")) {
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+}
 
 function resetChecklist(){
 
@@ -601,9 +607,10 @@ function updateDateTime(){
     time +
     "</span>";
 }
-
-updateDateTime();
-setInterval(updateDateTime, 1000);
+if (document.getElementById("currentDateTime")) {
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+}
 
 function showLastLogin(){
 
@@ -612,8 +619,9 @@ function showLastLogin(){
     document.getElementById("lastLogin").innerHTML =
     now.toLocaleString("en-GB");
 }
-
-showLastLogin();
+if (document.getElementById("lastLogin")) {
+    showLastLogin();
+}
 
 let seconds = 0;
 
@@ -629,8 +637,9 @@ function updateSessionTimer(){
     String(minutes).padStart(2, "0") + ":" +
     String(secs).padStart(2, "0");
 }
-
-setInterval(updateSessionTimer, 1000);
+if (document.getElementById("sessionTimer")) {
+    setInterval(updateSessionTimer, 1000);
+}
 
 function updateConnectionStatus(){
 
@@ -653,9 +662,13 @@ function showBrowserInfo(){
     navigator.userAgent;
 
 }
-updateConnectionStatus();
+if (document.getElementById("connectionStatus")) {
+    updateConnectionStatus();
+}
 
-showBrowserInfo();
+if (document.getElementById("browserInfo")) {
+    showBrowserInfo();
+}
 
 window.addEventListener("online", updateConnectionStatus);
 

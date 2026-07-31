@@ -11,47 +11,131 @@
 </head>
 
 
-<body>
+<body id="top">
 
     <header>
-        <h1>Women Safety Aware Navigation System</h1>
-        <p>Smart navigation for safer journeys</p>
+    <h1>Women Safety Aware Navigation System</h1>
+    <p>Smart Navigation for Safer Journeys</p>
+
+    <nav>
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#footer">Contact</a>
+    </nav>
     </header>
 
+    <section class="hero">
+    <h2>Travel Smarter. Travel Safer.</h2>
 
-    <section>
-        <h2>About the Project</h2>
+    <p>
+        Empowering women with safer navigation,
+        emergency support, and real-time safety awareness.
+    </p>
 
-        <p>
-            This project provides secure route suggestions,
-            real-time location tracking, and emergency alert
-            features to improve women's safety.
-        </p>
-
+    <button onclick="scrollToAbout()">Get Started</button>
     </section>
 
 
-    <section>
-        <h2>Project Features</h2>
+    <section id="about">
+    <h2>About the Project</h2>
 
-        <ul>
-            <li>Safe Route Recommendation</li>
-            <li>Emergency Alert System</li>
-            <li>Real-Time Location Tracking</li>
-            <li>Safety Risk Analysis</li>
-        </ul>
-
-        <button onclick="emergencyAlert()">
-        Emergency Alert
-        </button>
-
+    <p>
+        The Women Safety Aware Navigation System is a smart web application
+        designed to enhance women's safety during travel. It aims to provide
+        secure route awareness, emergency assistance, and location-based
+        safety support through an easy-to-use interface.
+    </p>
     </section>
 
+
+    <section id="features">
+    <h2>Our Features</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>🟢 Safe Route</h3>
+            <p>Suggests safer travel routes for women.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📍 Live Location</h3>
+            <p>Helps users share their current location during travel.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🆘 SOS Alert</h3>
+            <p>Allows users to trigger an emergency alert quickly.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📞 Emergency Contacts</h3>
+            <p>Stores important contacts for emergencies.</p>
+        </div>
+
+    </div>
+    </section>
+
+    <section id="how-it-works">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+        <div class="step">
+            <h3>1️⃣ Open Website</h3>
+            <p>Launch the Women Safety Aware Navigation System.</p>
+        </div>
+
+        <div class="step">
+            <h3>2️⃣ Allow Location</h3>
+            <p>Allow location access to detect your current position.</p>
+        </div>
+
+        <div class="step">
+            <h3>3️⃣ Choose Destination</h3>
+            <p>Enter your destination to begin navigation.</p>
+        </div>
+
+        <div class="step">
+            <h3>4️⃣ Find Safe Route</h3>
+            <p>The system identifies safer travel routes.</p>
+        </div>
+
+        <div class="step">
+            <h3>5️⃣ Travel Safely</h3>
+            <p>Reach your destination and use SOS if required.</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="sos">
+    <h2>Emergency SOS</h2>
+
+    <p>
+        In case of an emergency, press the SOS button below to activate the emergency alert.
+    </p>
+
+    <button onclick="emergencyAlert()">🆘 SOS Emergency</button>
+    </section>
     
-    <footer>
-        <p>Developed by CSE AI & ML Students</p>
-    </footer>
+    <footer id="footer">
+    <h3>Women Safety Aware Navigation System</h3>
 
+    <p>Developed by CSE AI & ML Students</p>
+
+    <p>Narayana Engineering College, Nellore</p>
+
+    <p>Version 2.0</p>
+
+    <p>
+        GitHub Repository:
+        <a href="https://github.com/mahithapathipati/Women-Safety-Aware-Navigation-System" target="_blank">
+            View Project
+        </a>
+    </p>
+
+    <p>© 2026 All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 
